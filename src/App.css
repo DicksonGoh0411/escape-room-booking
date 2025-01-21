@@ -1,0 +1,14 @@
+body {
+    background-image: url('./assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.card {
+    transition: transform 0.5s
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
