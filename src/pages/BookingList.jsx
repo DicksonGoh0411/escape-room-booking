@@ -53,6 +53,7 @@ export default function BookingList() {
                     setBookings((prevBookings) => prevBookings.filter((booking) => booking.id !== bookingToDelete));
                     console.log("Booking deleted successfully.");
                     setShowDeleteModal(false);
+                    setBookingToDelete(null);
                 })
                 .catch((error) => console.error("Error deleting booking:", error));
         }
@@ -73,10 +74,20 @@ export default function BookingList() {
 
     return (
         <Container className="my-2 p-3">
-            <h1 className="text-center mb-5" style={{ color: "#F9F9F9" }}>Your Bookings</h1>
-            {bookings.map((booking) => (
-                <BookingItem key={booking.id} booking={booking} onDelete={handleDelete} onEdit={handleEdit} />
-            ))}
+            {loading ? (
+                <div className="d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>
+                    <Spinner animation="border" variant="light" style={{ width: "100px", height: "100px" }} />
+                </div>
+            ) : (
+                <>
+                    <h1 className="text-center mb-5" style={{ color: "#F9F9F9" }}>Your Bookings</h1>
+                    {bookings.map((booking) => (
+                        <BookingItem key={booking.id} booking={booking} onDelete={handleDelete} onEdit={handleEdit} />
+                    ))}
+                </>
+            )}
+
+
 
             <Modal show={showDeleteModal} onHide={() => setShowDeleteModal(false)} centered>
                 <Modal.Header className="bg-dark text-white">

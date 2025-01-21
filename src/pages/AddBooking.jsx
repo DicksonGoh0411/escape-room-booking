@@ -81,12 +81,11 @@ export default function AddBooking() {
             .then((response) => {
                 console.log("Success:", response.data)
                 sendEmail();
+                handleBack();
             })
             .catch((error) => {
                 console.error("Error", error)
             })
-
-        handleBack();
 
     }
 

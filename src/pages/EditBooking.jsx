@@ -101,12 +101,12 @@ export default function EditBooking() {
             .then((response) => {
                 console.log("Booking updated successfully:", response.data);
                 sendEmail();
+                handleBack()
             })
             .catch((error) => {
                 console.error("Error updating booking:", error);
             });
 
-        handleBack()
     };
 
     const handleBack = () => {
