@@ -66,7 +66,6 @@ export default function ProfilePage() {
             const userDocRef = doc(db, "users", userId);
             await setDoc(userDocRef, { profilePicture: url }, { merge: true });
 
-            alert("Profile picture uploaded successfully!");
         } catch (error) {
             console.error("Error uploading image:", error);
             alert("Failed to upload image. Please try again.");

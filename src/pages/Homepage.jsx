@@ -6,14 +6,14 @@ export default function Homepage() {
     return (
         <Container style={{ maxWidth: "70%" }}>
             <div className="mb-4" style={{ textAlign: "center" }}>
-                <img src="./src/assets/logo.png" className="mb-2" style={{ maxWidth: "30%" }} />
+                <img src="/assets/logo.png" className="mb-2" style={{ width: "30%" }} />
                 <h1 style={{ color: "#F9F9F9", fontSize: "44px" }}>Think Fast, Escape Faster</h1>
             </div>
 
             <Row className="mb-3 justify-content-center">
                 <Col xs={12} md={6}>
                     <Card className="mb-3" style={{ boxShadow: "0 0 6px 3px rgba(255, 255, 255, 0.8)", backgroundColor: "rgba(0, 0, 0, 0.2)", backdropFilter: "blur(7px)", color: "#F9F9F9", width: "100%" }}>
-                        <Card.Img variant="top" src="./src/assets/LobsterGame.jpg" />
+                        <Card.Img variant="top" src="/assets/LobsterGame.jpg" />
                         <Card.Body className="d-flex flex-column">
                             <Card.Title as="h4">Lobster Game</Card.Title>
                             <Card.Subtitle className="mb-2"><i>Theme: Survival</i></Card.Subtitle>
@@ -27,7 +27,8 @@ export default function Homepage() {
                     </Card>
                 </Col>
                 <Col xs={12} md={6}>
-                    <Card className="mb-3" style={{ boxShadow: "0 0 6px 3px rgba(255, 255, 255, 0.8)", backgroundColor: "rgba(0, 0, 0, 0.2)", backdropFilter: "blur(7px)", color: "#F9F9F9", width: "100%" }}>                        <Card.Img variant="top" src="./src/assets/TheForgottenAsylum.jpg" />
+                    <Card className="mb-3" style={{ boxShadow: "0 0 6px 3px rgba(255, 255, 255, 0.8)", backgroundColor: "rgba(0, 0, 0, 0.2)", backdropFilter: "blur(7px)", color: "#F9F9F9", width: "100%" }}>
+                        <Card.Img variant="top" src="/assets/TheForgottenAsylum.jpg" />
                         <Card.Body>
                             <Card.Title as="h4">The Forgotten Asylum</Card.Title>
                             <Card.Subtitle className="mb-2"><i>Theme: Haunted Mental Institution</i></Card.Subtitle>
@@ -39,7 +40,8 @@ export default function Homepage() {
                     </Card>
                 </Col>
                 <Col xs={12} md={6}>
-                    <Card className="mb-3" style={{ boxShadow: "0 0 6px 3px rgba(255, 255, 255, 0.8)", backgroundColor: "rgba(0, 0, 0, 0.2)", backdropFilter: "blur(7px)", color: "#F9F9F9", width: "100%" }}>                        <Card.Img variant="top" src="./src/assets/TheFollowersoftheEvilOne.jpg" />
+                    <Card className="mb-3" style={{ boxShadow: "0 0 6px 3px rgba(255, 255, 255, 0.8)", backgroundColor: "rgba(0, 0, 0, 0.2)", backdropFilter: "blur(7px)", color: "#F9F9F9", width: "100%" }}>
+                        <Card.Img variant="top" src="/assets/TheFollowersoftheEvilOne.jpg" />
                         <Card.Body>
                             <Card.Title as="h4">The Followers of the Evil One</Card.Title>
                             <Card.Subtitle className="mb-2"><i>Theme: Cult and Supernatural Horror</i></Card.Subtitle>
@@ -52,7 +54,8 @@ export default function Homepage() {
                     </Card>
                 </Col>
                 <Col xs={12} md={6}>
-                    <Card className="mb-3" style={{ boxShadow: "0 0 6px 3px rgba(255, 255, 255, 0.8)", backgroundColor: "rgba(0, 0, 0, 0.2)", backdropFilter: "blur(7px)", color: "#F9F9F9", width: "100%" }}>                        <Card.Img variant="top" src="./src/assets/TheAbyssalCode.jpg" />
+                    <Card className="mb-3" style={{ boxShadow: "0 0 6px 3px rgba(255, 255, 255, 0.8)", backgroundColor: "rgba(0, 0, 0, 0.2)", backdropFilter: "blur(7px)", color: "#F9F9F9", width: "100%" }}>
+                        <Card.Img variant="top" src="/assets/TheAbyssalCode.jpg" />
                         <Card.Body>
                             <Card.Title as="h4">The Abyssal Code</Card.Title>
                             <Card.Subtitle className="mb-2"><i>Theme: Underwater Adventure and Intrigue</i></Card.Subtitle>

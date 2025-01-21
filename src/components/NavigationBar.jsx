@@ -33,7 +33,7 @@ export default function NavigationBar() {
         <Navbar style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)', backdropFilter: "blur(10px)" }} variant="dark" expand="lg" className="mb-4">
             <Container>
                 <Navbar.Brand as={Link} to="/">
-                    <Image src="./src/assets/logo.png" style={{ width: "100px" }} />
+                    <Image src="/assets/logo.png" style={{ width: "100px" }} />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
