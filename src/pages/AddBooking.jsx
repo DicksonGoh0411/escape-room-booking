@@ -25,7 +25,7 @@ export default function AddBooking() {
 
     useEffect(() => {
         if (!currentUser) {
-            navigate("/login");
+            navigate("/home");
         }
     }, [currentUser, navigate]);
 

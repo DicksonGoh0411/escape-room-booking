@@ -26,7 +26,7 @@ export default function EditBooking() {
 
     useEffect(() => {
         if (!currentUser) {
-            navigate("/login");
+            navigate("/home");
         }
     }, [currentUser, navigate]);
 

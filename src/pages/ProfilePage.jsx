@@ -20,7 +20,7 @@ export default function ProfilePage() {
 
     useEffect(() => {
         if (!currentUser) {
-            navigate("/login");
+            navigate("/home");
         }
     }, [currentUser, navigate]);
 

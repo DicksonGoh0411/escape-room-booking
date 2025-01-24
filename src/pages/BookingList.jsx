@@ -17,11 +17,9 @@ export default function BookingList() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        // Check if user is authenticated and redirect to login if not
         if (!currentUser) {
-            navigate("/login");
+            navigate("/home");
         } else {
-            // If user is authenticated, fetch bookings
             const userId = auth.currentUser.uid;
             fetchBookings(userId);
         }
